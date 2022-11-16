@@ -1,0 +1,14 @@
+%h1 
+  Name: #{@kitten.name} 
+%p 
+  Age: #{@kitten.age} 
+%p 
+  Cuteness: #{@kitten.cuteness} 
+%p 
+  Softness: #{@kitten.softness}
+
+= link_to edit_kitten_path(@kitten) do
+  Edit
+
+= link_to kitten_path(@kitten), method: :delete do
+  Delete

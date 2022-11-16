@@ -1,0 +1,11 @@
+= form_with model: @kitten do |f| 
+
+  = f.text_field :name, placeholder: "Name"
+
+  = f.number_field :age, placeholder: "Age"
+
+  = f.text_field :cuteness, placeholder: "Cuteness"
+
+  = f.text_field :softness, placeholder: "Softness"
+
+  = f.submit
